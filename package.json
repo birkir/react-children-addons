@@ -1,8 +1,9 @@
 {
   "name": "react-children-addons",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React Children Addons",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": "https://github.com/birkir/react-children-addons",
   "license": "MIT",
   "keywords": [
@@ -12,7 +13,7 @@
     "utils"
   ],
   "scripts": {
-    "build": "babel src --out-dir ./lib --extensions '.ts'",
+    "build": "babel src --out-dir ./lib --extensions '.ts' && tsc -p .",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir ./lib"
   },
