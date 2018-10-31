@@ -3,8 +3,17 @@
 
 React children utilities and addons
 
- - toFlatArray
- - mapFlat
+```bash
+npm install react-children-addons -S
+
+# or
+
+yarn add react-children-addons -S
+```
+
+## API Methods
+ - [toFlatArray](#toflatarray)
+ - [mapFlat](#mapflat)
 
 ### toFlatArray
 
