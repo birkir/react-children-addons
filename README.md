@@ -41,7 +41,7 @@ function List({ children }) {
 
 ### mapFlat
 
-Same as `toFlatArray` but with a
+Same as `toFlatArray` but with a map function
 
 ```jsx
 import React from 'react';
