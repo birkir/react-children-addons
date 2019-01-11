@@ -32,11 +32,9 @@ function List({ children }) {
     <li>Another Item</li>
   </>
 </List>
-
-// =>
-
+```
+```jsx
 [<li>Item</li>, <li>Another Item</li>]
-
 ```
 
 ### mapFlat
@@ -71,6 +69,11 @@ function List({ children }) {
 <ul>
   <li class="link">Item</li>
   <li class="link">Another Item</li>
- <li class="link">Nested Item</li>
+  <li class="link">Nested Item</li>
 </ul>
 ```
+
+
+## Todo
+
+Add tests, changelog and more ideas for addons.
