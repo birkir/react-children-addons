@@ -17,6 +17,8 @@ yarn add react-children-addons -S
 
 ### toFlatArray
 
+Takes children and flattens all React.Fragments into a single array
+
 ```jsx
 import { toFlatArray } from 'react-children-addons';
 
@@ -39,6 +41,8 @@ function List({ children }) {
 
 ### mapFlat
 
+Same as `toFlatArray` but with a
+
 ```jsx
 import React from 'react';
 import { mapFlat } from 'react-children-addons';
@@ -56,12 +60,17 @@ function List({ children }) {
   <>
     <li>Another Item</li>
   </>
+  <React.Fragment>
+    <>
+      <li>Nested Item</li>
+    </>
+  </React.Fragment>
 </List>
-
-// =>
-
+```
+```html
 <ul>
   <li class="link">Item</li>
   <li class="link">Another Item</li>
+ <li class="link">Nested Item</li>
 </ul>
 ```
