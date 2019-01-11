@@ -21,7 +21,7 @@ yarn add react-children-addons -S
 import { toFlatArray } from 'react-children-addons';
 
 function List({ children }) {
-  console.log(children);
+  console.log(toFlatArray(children));
 }
 
 <List>
