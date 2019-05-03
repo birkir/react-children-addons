@@ -21,8 +21,8 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "react": "16.6.0",
-    "react-is": "16.6.0"
+    "react": "^16.6.0",
+    "react-is": "^16.6.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
